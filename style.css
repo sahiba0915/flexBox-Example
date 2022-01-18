@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: rgb(189, 189, 189);
+  --secondary-color: rgb(241, 241, 227);
+}
+
+body {
+  background-color: var(--primary-color);
+}
+
+.container {
+  max-width: 700px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin: auto;
+}
+
+.sidebar,
+.main {
+  background-color: var(--secondary-color);
+  height: 300px;
+  padding: 10px;
+  border-radius: 10px;
+  margin: auto;
+}
+
+.sidebar {
+  flex-basis: 250px;
+}
+
+.main {
+  flex-grow: 1;
+}
